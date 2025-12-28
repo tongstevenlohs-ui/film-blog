@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background: #000;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+header p {
+  color: #ccc;
+}
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+}
+
+/* Articles */
+article {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-left: 5px solid #000;
+}
+
+article h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+}
+
+.meta {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+article a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar */
+aside {
+  background: #fff;
+  padding: 25px;
+}
+
+aside h3 {
+  font-family: 'Playfair Display', serif;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
